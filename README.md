@@ -86,6 +86,17 @@ This project uses the Pixabay API to search and display images.
 
 The API key is stored in `.env.local` and is not uploaded to GitHub.
 
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Search Results
+![Search Results](screenshots/search.png)
+
+### Favorites
+![Favorites](screenshots/favorites.png)
+
 ## Author
 
 **Gagana V**
