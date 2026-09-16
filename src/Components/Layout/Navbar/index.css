@@ -1,0 +1,171 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: #111827;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo h2 {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.theme-btn{
+    margin-left:15px;
+    padding:10px 14px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:20px;
+}
+
+.fav-link{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    margin-left:20px;
+}
+
+body.dark .fav-link{
+    color:white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.fav-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.fav-link:hover {
+  color: #0077ff;
+}
+
+.search-box {
+  width: 40%;
+  display: flex;
+}
+
+.search-box input {
+  width: 100%;
+  height: 42px;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  border-radius: 25px 0 0 25px;
+  font-size: 16px;
+}
+
+.search-box button {
+  width: 55px;
+  border: none;
+  cursor: pointer;
+  background: #00ab6b;
+  color: white;
+  font-size: 18px;
+  border-radius: 0 25px 25px 0;
+}
+
+.search-box button:hover {
+  background: #008d58;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ab6b;
+}
+
+
+.nav-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.login,
+.join {
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.login {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.login:hover {
+  background: white;
+  color: black;
+}
+
+.join {
+  background: #00ab6b;
+  color: white;
+}
+
+.join:hover {
+  background: #008d58;
+}
+
+
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+
+  .search-box {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .search-box {
+    width: 45%;
+  }
+
+  .logo h2 {
+    font-size: 24px;
+  }
+
+  .login,
+  .join {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
