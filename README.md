@@ -1,16 +1,93 @@
-# React + Vite
+# Pixabay Image Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based image search application using the Pixabay API. Users can search for images, browse results by category, view image details, download images, and save their favorite images.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Search images by keyword
+* Browse images by category
+* Pagination for search results
+* View images in a popup
+* Add and remove favorite images
+* Favorites stored using localStorage
+* Download/view high-resolution images
+* Loading and error handling
+* Responsive design
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* JavaScript
+* HTML
+* CSS
+* Pixabay API
+* React Router
+* Vite
+* LocalStorage
+* Git & GitHub
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── Components/
+│   ├── Layout/
+│   │   ├── Card/
+│   │   ├── Categories/
+│   │   ├── Footer/
+│   │   ├── Navbar/
+│   │   └── Pagination/
+│   └── UI/
+│       └── Input/
+│
+├── Pages/
+│   ├── Home.jsx
+│   └── Favorites.jsx
+│
+├── App.jsx
+└── main.jsx
+```
+
+## Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/gagana-v2004/pixabay-project.git
+```
+
+Go to the project folder:
+
+```bash
+cd pixabay-project
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env.local` file in the project folder and add your Pixabay API key:
+
+```env
+VITE_PIXABAY_API_KEY=your_api_key
+```
+
+Start the project:
+
+```bash
+npm run dev
+```
+
+## API
+
+This project uses the Pixabay API to search and display images.
+
+The API key is stored in `.env.local` and is not uploaded to GitHub.
+
+## Author
+
+**Gagana V**
+
+GitHub: https://github.com/gagana-v2004
