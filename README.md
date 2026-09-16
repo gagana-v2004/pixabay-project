@@ -89,13 +89,13 @@ The API key is stored in `.env.local` and is not uploaded to GitHub.
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/Home.png)
 
 ### Search Results
-![Search Results](screenshots/search.png)
+![Search Results](screenshots/Search.png)
 
 ### Favorites
-![Favorites](screenshots/favorites.png)
+![Favorites](screenshots/Fav.png)
 
 ## Author
 
