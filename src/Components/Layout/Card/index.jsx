@@ -29,10 +29,9 @@ setLoading(true);
 setError("");
 
 const API_KEY = import.meta.env.VITE_PIXABAY_API_KEY;
-console.log("API KEY:", API_KEY);
 
 fetch(
-  `https://pixabay.com/api/?key=56250608-33b35ce3c07b0413e6e46c185&q=${query}&image_type=photo&page=${currentPage}&per_page=${perPage}`,
+  `https://pixabay.com/api/?key=${API_KEY}&q=${query}&image_type=photo&page=${currentPage}&per_page=${perPage}`
 )
       .then((res) => {
         if (!res.ok) {
